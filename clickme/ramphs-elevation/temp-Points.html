@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <base target="_blank"> <!-- open all links on a new tab -->
+
+        <title>Points</title>
+
+        <link href="clickme_assets/clickme.css" rel="stylesheet">
+<link href="clickme_assets/d3_tip.css" rel="stylesheet">
+<link href="clickme_assets/chart.css" rel="stylesheet">
+<script src="clickme_assets/d3.v3.4.3.js"></script>
+<script src="clickme_assets/clickme.js"></script>
+<script src="clickme_assets/d3_tip.js"></script>
+
+        <style>
+            text{
+                font-family: Rockwell, Helvetica, Arial, sans;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="g-search hideable">
+                <input type="text" placeholder="Search…">
+                <button style="display:none;" class="g-search-clear">X</button>
+        </div>
+        <script type="text/javascript">
+            plot = new_plot({
+                data: [{"x":6.91383,"y":38,"point_name":"Amphitheater at Skikda","radius":5,"color_group":"Low"},
+{"x":14.657022,"y":50,"point_name":"Amphitheater at Nocera Superiore","radius":5,"color_group":"Low"},
+{"x":25.745132,"y":4,"point_name":"Amphitheater at Ierapetra","radius":5,"color_group":"Low"},
+{"x":6.451386,"y":21,"point_name":"Amphitheater at Xanten","radius":5,"color_group":"Low"},
+{"x":-2.440246,"y":78,"point_name":"Amphitheater at Dorchester / Maumbury Henge","radius":5,"color_group":"Low"},
+{"x":-1.07547,"y":91,"point_name":"Amphitheater at Silchester","radius":5,"color_group":"Low"},
+{"x":14.52054,"y":35,"point_name":"Amphitheater at Nole","radius":5,"color_group":"Low"},
+{"x":14.0304,"y":9,"point_name":"Amphitheater at Literno","radius":5,"color_group":"Low"},
+{"x":14.250089,"y":34,"point_name":"Imperial Amphitheater at Capua","radius":5,"color_group":"Low"},
+{"x":14.250309,"y":37,"point_name":"Republican Amphitheater at Capua","radius":5,"color_group":"Low"},
+{"x":1.288445,"y":7,"point_name":"Amphitheater at Caistor Saint Edmund","radius":5,"color_group":"Low"},
+{"x":0.696233,"y":59,"point_name":"Amphitheater at Tours","radius":5,"color_group":"Low"},
+{"x":2.575376,"y":64,"point_name":"Amphitheater at Senlis","radius":5,"color_group":"Low"},
+{"x":2.883491,"y":50,"point_name":"Amphitheater at Meaux","radius":5,"color_group":"Low"},
+{"x":2.293485,"y":32,"point_name":"Amphitheater at Amiens","radius":5,"color_group":"Low"},
+{"x":3.010181,"y":14,"point_name":"Amphitheater at Narbonne","radius":5,"color_group":"Low"},
+{"x":0.622122,"y":52,"point_name":"Amphitheater at Agen","radius":5,"color_group":"Low"},
+{"x":3.214026,"y":56,"point_name":"Amphitheater at B\u00e9ziers","radius":5,"color_group":"Low"},
+{"x":14.137993,"y":89,"point_name":"Amphitheater at Calvi Risorta","radius":5,"color_group":"Low"},
+{"x":13.511791,"y":54,"point_name":"Amphitheater at Ancona","radius":5,"color_group":"Low"},
+{"x":13.695186,"y":76,"point_name":"Amphitheater at Termini Imerese","radius":5,"color_group":"Low"},
+{"x":18.172733,"y":51,"point_name":"Amphitheater at Lecce","radius":5,"color_group":"Low"},
+{"x":11.879039,"y":17,"point_name":"Amphitheater at Padua","radius":5,"color_group":"Low"},
+{"x":13.370713,"y":2,"point_name":"Amphitheater at Aquileia","radius":5,"color_group":"Low"},
+{"x":4.018775,"y":80,"point_name":"Amphitheater at Reims","radius":5,"color_group":"Low"},
+{"x":0.536724,"y":19,"point_name":"Amphitheater at Lillebonne","radius":5,"color_group":"Low"},
+{"x":20.945728,"y":12,"point_name":"Amphitheater at Ptolemais","radius":5,"color_group":"Low"},
+{"x":10.791226,"y":68,"point_name":"Amphitheater at Bararus","radius":5,"color_group":"Low"},
+{"x":10.673126,"y":7,"point_name":"Amphitheater at Thaenae","radius":5,"color_group":"Low"},
+{"x":-2.766307,"y":25,"point_name":"Amphitheater at Caerwent","radius":5,"color_group":"Low"},
+{"x":-4.296651,"y":29,"point_name":"Amphitheater at Carmarthen","radius":5,"color_group":"Low"},
+{"x":32.405344,"y":6,"point_name":"Amphitheater at Paphos","radius":5,"color_group":"Low"},
+{"x":33.902435,"y":6,"point_name":"Amphitheater at Salamis","radius":5,"color_group":"Low"},
+{"x":12.49404,"y":11,"point_name":"Amphitheater at Sabratha","radius":5,"color_group":"Low"},
+{"x":27.884552,"y":54,"point_name":"Amphitheater at Cyzicus","radius":5,"color_group":"Low"},
+{"x":36.160437,"y":89,"point_name":"Amphitheater at Antioch","radius":5,"color_group":"Low"},
+{"x":35.900509,"y":50,"point_name":"Amphitheater at Anazarbus","radius":5,"color_group":"Low"},
+{"x":27.174177,"y":100,"point_name":"Amphitheater at Pergamum","radius":5,"color_group":"Low"},
+{"x":34.897451,"y":11,"point_name":"Amphitheater at Caesarea","radius":5,"color_group":"Low"},
+{"x":13.850243,"y":16,"point_name":"Amphitheater at Pula","radius":5,"color_group":"Low"},
+{"x":2.198958,"y":29,"point_name":"Amphitheater at Cherchell","radius":5,"color_group":"Low"},
+{"x":5.522904,"y":83,"point_name":"Amphitheater at Gemellae","radius":5,"color_group":"Low"},
+{"x":10.866282,"y":9,"point_name":"Amphitheater at Leptiminus","radius":5,"color_group":"Low"},
+{"x":6.72871,"y":12,"point_name":"Amphitheater Fr\u00e9jus","radius":5,"color_group":"Low"},
+{"x":19.445131,"y":15,"point_name":"Amphitheater at Durr\u00ebs","radius":5,"color_group":"Low"},
+{"x":-0.6433512,"y":20,"point_name":"Amphitheater at Saintes","radius":5,"color_group":"Low"},
+{"x":14.500496,"y":68,"point_name":"Amphitheater at Telesia","radius":5,"color_group":"Low"},
+{"x":-2.956878,"y":13,"point_name":"Amphitheater at Caerleon","radius":5,"color_group":"Low"},
+{"x":-0.092136,"y":29,"point_name":"Amphitheater at London","radius":5,"color_group":"Low"},
+{"x":16.473893,"y":8,"point_name":"Amphitheater at Salona","radius":5,"color_group":"Low"},
+{"x":0.7133087,"y":97,"point_name":"Amphitheater at Vesunna","radius":5,"color_group":"Low"},
+{"x":-1.3796296,"y":41,"point_name":"Amphitheater at Aldborough","radius":5,"color_group":"Low"},
+{"x":10.99435,"y":62,"point_name":"Amphitheater at Verona","radius":5,"color_group":"Low"},
+{"x":10.5057722,"y":19,"point_name":"Amphitheater at Luca","radius":5,"color_group":"Low"},
+{"x":8.8044188,"y":49,"point_name":"Amphitheater at Hydata Hypsitana/Forum Traiani","radius":5,"color_group":"Low"},
+{"x":12.594868,"y":52,"point_name":"Amphitheater at Lucus Feroniae","radius":5,"color_group":"Low"},
+{"x":-6.1084683,"y":52,"point_name":"Amphitheater at Lixus","radius":5,"color_group":"Low"},
+{"x":12.4671905,"y":86,"point_name":"Amphitheater at Ocriculum","radius":5,"color_group":"Low"},
+{"x":11.2595198,"y":47,"point_name":"Amphitheater at Florence","radius":5,"color_group":"Low"},
+{"x":-0.980161,"y":23,"point_name":"Amphitheater at Carthago Nova/Col. Urbs Iulia","radius":5,"color_group":"Low"},
+{"x":-0.582476,"y":17,"point_name":"Amphitheater at Bordeaux","radius":5,"color_group":"Low"},
+{"x":16.5923292,"y":44,"point_name":"Amphitheater at Scylletium/Scolacium","radius":5,"color_group":"Low"},
+{"x":35.501631,"y":-121,"point_name":"Amphitheater at Scythopolis/Nysa","radius":5,"color_group":"Low"},
+{"x":-0.2386057,"y":47,"point_name":"Amphitheater at Gennes","radius":5,"color_group":"Low"},
+{"x":-2.886928,"y":23,"point_name":"Amphitheater at Chester","radius":5,"color_group":"Low"},
+{"x":4.359599,"y":50,"point_name":"Amphitheater at Nimes","radius":5,"color_group":"Low"},
+{"x":2.352855,"y":46,"point_name":"Amphitheater at Lutetia","radius":5,"color_group":"Low"},
+{"x":21.220083,"y":72,"point_name":"Amphitheater at Viminacium","radius":5,"color_group":"Low"},
+{"x":13.823575,"y":73,"point_name":"Amphitheater at Casinum","radius":5,"color_group":"Low"},
+{"x":10.022386,"y":4,"point_name":"Amphitheater at Luna","radius":5,"color_group":"Low"},
+{"x":15.006449,"y":18,"point_name":"Amphitheater at Paestum","radius":5,"color_group":"Low"},
+{"x":15.085323,"y":31,"point_name":"Amphitheater at Catinia","radius":5,"color_group":"Low"},
+{"x":-6.046742,"y":17,"point_name":"Amphitheater at Italica","radius":5,"color_group":"Low"},
+{"x":9.113228,"y":60,"point_name":"Amphitheater at Cagliari","radius":5,"color_group":"Low"},
+{"x":1.25878,"y":13,"point_name":"Amphitheater at Tarragona","radius":5,"color_group":"Low"},
+{"x":3.117431,"y":27,"point_name":"Amphitheater at Empuries","radius":5,"color_group":"Low"},
+{"x":14.309452,"y":18,"point_name":"Amphitheater at Leptis Magna","radius":5,"color_group":"Low"},
+{"x":5.878859,"y":46,"point_name":"Amphitheater at Nijmegen","radius":5,"color_group":"Low"},
+{"x":22.892126,"y":98,"point_name":"Amphitheater at Corinth","radius":5,"color_group":"Low"},
+{"x":12.778929,"y":99,"point_name":"Amphitheater at Hadrian's Villa at Tivoli","radius":5,"color_group":"Low"},
+{"x":10.314924,"y":14,"point_name":"Amphitheater at Carthage","radius":5,"color_group":"Low"},
+{"x":15.278934,"y":23,"point_name":"Amphitheater at Syracuse","radius":5,"color_group":"Low"},
+{"x":14.127615,"y":58,"point_name":"Early Amphitheater at Pozzuoli","radius":5,"color_group":"Low"},
+{"x":14.125315,"y":41,"point_name":"Flavian Amphitheater at Pozzuoli","radius":5,"color_group":"Low"},
+{"x":14.056,"y":19,"point_name":"Amphitheater at Cumae","radius":5,"color_group":"Low"},
+{"x":-8.49333,"y":100,"point_name":"Amphitheater at Conimbriga","radius":5,"color_group":"Low"},
+{"x":-2.6919,"y":83,"point_name":"Amphitheater at Newstead (Trimontium)","radius":5,"color_group":"Low"},
+{"x":14.495262,"y":21,"point_name":"Amphitheater at Pompeii","radius":5,"color_group":"Low"},
+{"x":12.515144,"y":48,"point_name":"Amphitheatrum Castrense (Rome)","radius":5,"color_group":"Low"},
+{"x":12.492269,"y":22,"point_name":"Flavian Amphitheater at Rome","radius":5,"color_group":"Low"},
+{"x":12.494913,"y":22,"point_name":"Ludus Magnus Arena","radius":5,"color_group":"Low"},
+{"x":4.631111,"y":21,"point_name":"Amphitheater at Arles","radius":5,"color_group":"Low"},
+{"x":5.49096,"y":371,"point_name":"Half Amphitheater at Grand","radius":5,"color_group":"High"},
+{"x":6.181932,"y":171,"point_name":"Amphitheater at Metz","radius":5,"color_group":"High"},
+{"x":1.518328,"y":150,"point_name":"Amphitheater at Saint Marcel","radius":5,"color_group":"High"},
+{"x":38.273763,"y":408,"point_name":"Possible Amphitheater at Palmyra","radius":5,"color_group":"High"},
+{"x":36.479844,"y":845,"point_name":"Amphitheater at Bosra","radius":5,"color_group":"High"},
+{"x":15.707727,"y":365,"point_name":"Amphitheater at Gleisdorf","radius":5,"color_group":"High"},
+{"x":16.018169,"y":250,"point_name":"Amphitheater at Burnum","radius":5,"color_group":"High"},
+{"x":10.58318,"y":463,"point_name":"Amphitheater at \u201cDambach\u201d","radius":5,"color_group":"High"},
+{"x":7.451179,"y":547,"point_name":"Amphitheater at Bern","radius":5,"color_group":"High"},
+{"x":6.241301,"y":391,"point_name":"Amphitheater at Nyon","radius":5,"color_group":"High"},
+{"x":16.589397,"y":283,"point_name":"Amphitheater at Sopron","radius":5,"color_group":"High"},
+{"x":-7.893572,"y":383,"point_name":"Amphitheater at Bobadela","radius":5,"color_group":"High"},
+{"x":13.082821,"y":308,"point_name":"Amphitheater at K\u00fcnzing","radius":5,"color_group":"High"},
+{"x":8.787954,"y":163,"point_name":"Amphitheater at Arnsburg","radius":5,"color_group":"High"},
+{"x":4.310856,"y":317,"point_name":"Amphitheater at Autun","radius":5,"color_group":"High"},
+{"x":-5.566944,"y":846,"point_name":"Amphitheater at Le\u00f3n","radius":5,"color_group":"High"},
+{"x":-4.516667,"y":659,"point_name":"Amphitheater at Sisapo","radius":5,"color_group":"High"},
+{"x":-8.430075,"y":175,"point_name":"Amphitheater at Braga","radius":5,"color_group":"High"},
+{"x":1.48926,"y":140,"point_name":"Amphitheater at Chartres","radius":5,"color_group":"High"},
+{"x":13.306027,"y":672,"point_name":"Amphitheater at San Vittorino","radius":5,"color_group":"High"},
+{"x":14.781523,"y":166,"point_name":"Amphitheater at Benevento","radius":5,"color_group":"High"},
+{"x":13.570767,"y":157,"point_name":"Amphitheater at Ascoli Picenum","radius":5,"color_group":"High"},
+{"x":11.990158,"y":417,"point_name":"Amphitheater at Bolsena","radius":5,"color_group":"High"},
+{"x":12.867528,"y":495,"point_name":"Amphitheater at Monteleone","radius":5,"color_group":"High"},
+{"x":13.627505,"y":683,"point_name":"Amphitheater at San Benedetto dei Marsi","radius":5,"color_group":"High"},
+{"x":9.178518,"y":116,"point_name":"Amphitheater at Milan","radius":5,"color_group":"High"},
+{"x":2.571162,"y":611,"point_name":"Amphitheater at Rodez","radius":5,"color_group":"High"},
+{"x":0.339589,"y":119,"point_name":"Amphitheater at Poitiers","radius":5,"color_group":"High"},
+{"x":1.251841,"y":304,"point_name":"Amphitheater at Limoges","radius":5,"color_group":"High"},
+{"x":6.015942,"y":246,"point_name":"Amphitheater at Besan\u00e7on","radius":5,"color_group":"High"},
+{"x":-4.788888,"y":125,"point_name":"Amphitheater at Cordoba","radius":5,"color_group":"High"},
+{"x":-6.100049,"y":405,"point_name":"Amphitheater at Caparra","radius":5,"color_group":"High"},
+{"x":1.397664,"y":149,"point_name":"Amphitheater at Toulouse","radius":5,"color_group":"High"},
+{"x":23.32865,"y":554,"point_name":"Amphitheater at Sophia","radius":5,"color_group":"High"},
+{"x":12.66501,"y":454,"point_name":"Amphitheater at Castra Albana","radius":5,"color_group":"High"},
+{"x":7.887734,"y":240,"point_name":"Amphitheater at Ivrea","radius":5,"color_group":"High"},
+{"x":7.04497,"y":546,"point_name":"Amphitheater at Susa","radius":5,"color_group":"High"},
+{"x":6.649088,"y":168,"point_name":"Amphitheater at Trier","radius":5,"color_group":"High"},
+{"x":8.123809,"y":877,"point_name":"Amphitheater at Theveste","radius":5,"color_group":"High"},
+{"x":9.114582,"y":556,"point_name":"Amphitheater at Sbeitla","radius":5,"color_group":"High"},
+{"x":-3.9235,"y":295,"point_name":"Amphitheater at Tomen y Mur","radius":5,"color_group":"High"},
+{"x":-5.650907,"y":223,"point_name":"Amphitheater at Carmona","radius":5,"color_group":"High"},
+{"x":22.81731,"y":183,"point_name":"Amphitheater at Micia","radius":5,"color_group":"High"},
+{"x":24.953076,"y":150,"point_name":"Amphitheater at Gortyn","radius":5,"color_group":"High"},
+{"x":10.706939,"y":111,"point_name":"Amphitheater at Thysdrus","radius":5,"color_group":"High"},
+{"x":10.707911,"y":116,"point_name":"Small Amphitheater at Thysdrus","radius":5,"color_group":"High"},
+{"x":8.213605,"y":361,"point_name":"Amphitheater at Vindonissa","radius":5,"color_group":"High"},
+{"x":-1.972188,"y":119,"point_name":"Amphitheater at Cirencester","radius":5,"color_group":"High"},
+{"x":9.2066727,"y":911,"point_name":"Amphitheater at Mactaris","radius":5,"color_group":"High"},
+{"x":6.259935,"y":1170,"point_name":"Amphitheater at Lambaesis","radius":5,"color_group":"High"},
+{"x":12.620454,"y":445,"point_name":"Amphitheater at Assisi","radius":5,"color_group":"High"},
+{"x":13.387224,"y":219,"point_name":"Amphitheater at Urbs Salvia","radius":5,"color_group":"High"},
+{"x":12.798114,"y":248,"point_name":"Amphitheater at Tibur","radius":5,"color_group":"High"},
+{"x":22.7853206,"y":491,"point_name":"Amphitheater at Ulpia Traiana Sarmizegetusa","radius":5,"color_group":"High"},
+{"x":12.2293009,"y":271,"point_name":"Amphitheater at Sutrium","radius":5,"color_group":"High"},
+{"x":7.72061,"y":285,"point_name":"Amphitheater at Col. Augusta Raurica","radius":5,"color_group":"High"},
+{"x":13.412289,"y":977,"point_name":"Amphitheater at Alba Fucens","radius":5,"color_group":"High"},
+{"x":15.9115794,"y":579,"point_name":"Amphitheater at Grumento","radius":5,"color_group":"High"},
+{"x":10.280644,"y":283,"point_name":"Amphitheater at Cividate Camuno","radius":5,"color_group":"High"},
+{"x":19.039066,"y":101,"point_name":"Military Amphitheater at Aquincum","radius":5,"color_group":"High"},
+{"x":19.047985,"y":105,"point_name":"Civil Amphitheater at Aquincum","radius":5,"color_group":"High"},
+{"x":12.6662021,"y":211,"point_name":"Amphitheater at Hispellum","radius":5,"color_group":"High"},
+{"x":7.2752435,"y":112,"point_name":"Amphitheater at Cemenelum","radius":5,"color_group":"High"},
+{"x":14.334997,"y":106,"point_name":"Amphitheater at Allifae","radius":5,"color_group":"High"},
+{"x":14.9159226,"y":406,"point_name":"Amphitheater at Larinum","radius":5,"color_group":"High"},
+{"x":11.88037,"y":263,"point_name":"Amphitheater at Arezzo","radius":5,"color_group":"High"},
+{"x":12.559679,"y":440,"point_name":"Amphitheater at Carsulae","radius":5,"color_group":"High"},
+{"x":14.3669959,"y":479,"point_name":"Amphitheater at Virunum","radius":5,"color_group":"High"},
+{"x":10.169215,"y":112,"point_name":"Amphitheater at Uthina","radius":5,"color_group":"High"},
+{"x":-2.720301,"y":296,"point_name":"Amphitheater at Charterhouse","radius":5,"color_group":"High"},
+{"x":14.608415,"y":224,"point_name":"Amphitheater at Abella","radius":5,"color_group":"High"},
+{"x":15.344984,"y":196,"point_name":"Amphitheater at Luceria/Noukeria (Apoulon)","radius":5,"color_group":"High"},
+{"x":8.867967,"y":225,"point_name":"Amphitheater at Libarna","radius":5,"color_group":"High"},
+{"x":21.850808,"y":550,"point_name":"Amphitheater at Cyrene","radius":5,"color_group":"High"},
+{"x":7.073493,"y":480,"point_name":"Amphitheater at Octodurus/Forum Claudii Vallensium","radius":5,"color_group":"High"},
+{"x":11.159132,"y":165,"point_name":"Amphitheater at Rusellae","radius":5,"color_group":"High"},
+{"x":15.5657773,"y":266,"point_name":"Amphitheater at Flavia Solva","radius":5,"color_group":"High"},
+{"x":-2.813944,"y":817,"point_name":"Amphitheater at Segobriga","radius":5,"color_group":"High"},
+{"x":16.850943,"y":185,"point_name":"Civilian Amphitheater at Carnuntum","radius":5,"color_group":"High"},
+{"x":16.848689,"y":185,"point_name":"Ludus at Carnuntum","radius":5,"color_group":"High"},
+{"x":16.892619,"y":164,"point_name":"Military Amphitheater at Carnuntum","radius":5,"color_group":"High"},
+{"x":23.154052,"y":441,"point_name":"Amphitheater at Porolissum","radius":5,"color_group":"High"},
+{"x":27.556674,"y":120,"point_name":"Amphitheater at Marcianopolis (Devnya)","radius":5,"color_group":"High"},
+{"x":-6.337952,"y":231,"point_name":"Amphitheater at M\u00e9rida (Emerita Augusta)","radius":5,"color_group":"High"},
+{"x":34.893845,"y":253,"point_name":"Amphitheater at Eleutheropolis","radius":5,"color_group":"High"},
+{"x":4.830556,"y":206,"point_name":"Amphitheater at Lyon","radius":5,"color_group":"High"},
+{"x":40.728926,"y":223,"point_name":"Amphitheater at Dura Europos","radius":5,"color_group":"High"}],
+                data_ranges: {"x":[-8.49333,40.728926],"y":[-121,1170]},
+                categorical_domains: {"x":null,"y":null},
+                width: 500,
+                height: 500,
+                padding: {"top":150,"right":400,"bottom":70,"left":100},
+                labels: {
+                    title: "Points",
+                    subtitle: "",
+                    x_title: "Longitude",
+                    y_title: "Elevation",
+                    color_title: "Group",
+                },
+                rotate: {
+                    x_title: null,
+                    y_title: true,
+                    x_labels: null,
+                    y_labels: null,
+                },
+                scale_limits: {
+                    x: null,
+                    y: null,
+                },
+                jitter: {
+                    x: 0,
+                    y: 0,
+                },
+                group_jitter: {
+                    x: null,
+                    y: null,
+                },
+                jitter_type: {
+                    x: null,
+                    y: null,
+                },
+                x_format: null,
+                y_format: null,
+                ordinal_scale_padding: 1,
+                linear_scale_padding: 40,
+            });
+
+            distance_between_show_names_and_color_groups = 80;
+            static_radius = 5;
+
+            opacity = 1;
+            stroke_width = 0;
+            show_sidebar = true;
+
+            color_scale = d3.scale.ordinal()
+                                            .domain(["High","Low"])
+                                            .range(["#24A5F9","#d62728"]);;
+            color_legend_counts = {"High":87,"Low":92};
+            tooltip_content = function(d) {
+return "<table><tr><td colspan='2' class='tooltip-title'>" + d.point_name + "</td></tr><tr class='tooltip-metric'><td class='tooltip-metric-name'>Longitude</td><td class='tooltip-metric-value'>" + d3.format('.2f')(d['x']) + "</td></tr><tr class='tooltip-metric'><td class='tooltip-metric-name'>Elevation</td><td class='tooltip-metric-value'>" + d['y'] + "</td></tr><tr class='tooltip-metric'><td class='tooltip-metric-name'>Group</td><td class='tooltip-metric-value'>" + d['color_group'] + "</td></tr></table>"
+};;
+        </script>
+
+        <script src="clickme_assets/Points/plot.js"></script>
+    </body>
+</html>
