@@ -1,0 +1,12 @@
+{
+  "name": "potlmaptile",
+  "version": "1.0.0",
+  "description": "",
+  "type": "overlay",
+  "format": "png",
+  "minzoom": "0",
+  "maxzoom": "6",
+  "bounds": "18.38820648,22.10442630,38.88983066,37.65230433",
+  "scale": "1",
+  "profile": "mercator"
+}
